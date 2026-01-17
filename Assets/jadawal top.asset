@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa03e9b8f18d2854cb2968b1b785fd8a, type: 3}
+  m_Name: jadawal top
+  m_EditorClassIdentifier: Assembly-CSharp::NPCCustomization.TimeBasedAccessoryRule
+  rules:
+  - day: 0
+    startHour: 0
+    endHour: 23
+    accessory: {fileID: 11400000, guid: 1805276deb703f645bf4a5922361e055, type: 2}
+    slotIndex: 0
+  - day: 1
+    startHour: 0
+    endHour: 23
+    accessory: {fileID: 11400000, guid: faa843c015c784a47869b7db4cdd29d3, type: 2}
+    slotIndex: 0
+  - day: 2
+    startHour: 0
+    endHour: 23
+    accessory: {fileID: 11400000, guid: 640480bf1e2790c4dad9b4ff40836027, type: 2}
+    slotIndex: 0
+  - day: 3
+    startHour: 0
+    endHour: 23
+    accessory: {fileID: 11400000, guid: cd0a8fca5e1f7bc45a32371a1dc05a61, type: 2}
+    slotIndex: 0
+  - day: 6
+    startHour: 0
+    endHour: 23
+    accessory: {fileID: 11400000, guid: 36f962091a65c144f873f45782cd642d, type: 2}
+    slotIndex: 0
+  enableSwitching: 1

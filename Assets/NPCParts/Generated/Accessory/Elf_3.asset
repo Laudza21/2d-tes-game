@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4473eaccda79104dbb43835ef226788, type: 3}
+  m_Name: Elf_3
+  m_EditorClassIdentifier: Assembly-CSharp::NPCCustomization.NPCPartData
+  partName: Elf_3
+  category: 4
+  accessoryType: 0
+  offsetDown: {x: 0, y: 0, z: 0}
+  offsetUp: {x: 0, y: 0, z: 0}
+  offsetLeft: {x: 0, y: 0, z: 0}
+  offsetRight: {x: 0, y: 0, z: 0}
+  usePerFrameOffsets: 0
+  frameOffsets:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  animationStates:
+  - stateName: 1. Idle
+    frames:
+    - {fileID: -6470460504253458178, guid: ae57e3fb48f68a24186c2849b8fd8b77, type: 3}
+  - stateName: 10. Damage
+    frames:
+    - {fileID: -6470460504253458178, guid: 02577746c0507a34e8d931eac01def22, type: 3}
+  - stateName: 11. Death
+    frames:
+    - {fileID: -6470460504253458178, guid: 9124e56f9c0748b49961dd8bc51de70b, type: 3}
+  - stateName: 12. Fishing - Cast
+    frames:
+    - {fileID: -6470460504253458178, guid: 1dc0cdb337b148c4b9d8aa097fe80243, type: 3}
+  - stateName: 12.1. Fishing - Wait
+    frames:
+    - {fileID: -6470460504253458178, guid: 3355deaf153c2f64b98a4a5229997195, type: 3}
+  - stateName: 12.2. Fishing - Bite
+    frames:
+    - {fileID: -6470460504253458178, guid: 99db4336f4c2e1f4d84c0d7fb41a9fce, type: 3}
+  - stateName: 12.3. Fishing - Reel
+    frames:
+    - {fileID: -6470460504253458178, guid: 8895f9249e71d1f4a9d0e55f24395b58, type: 3}
+  - stateName: 12.4. Fishing - Catch
+    frames:
+    - {fileID: -6470460504253458178, guid: 258fd4b5aab1a2e49add4c207a4419d6, type: 3}
+  - stateName: 13. Carrying - Idle
+    frames:
+    - {fileID: -6470460504253458178, guid: 24757834df2522e449f8d8d69a6593d1, type: 3}
+  - stateName: 13.1 Carrying - Walk
+    frames:
+    - {fileID: -6470460504253458178, guid: 49c00ba67414c6d4a8a9c3e71f3fb9f0, type: 3}
+  - stateName: 13.2 Carrying - Run
+    frames:
+    - {fileID: -6470460504253458178, guid: 5bdaf44cab8c84c4ba76e94559b79c2a, type: 3}
+  - stateName: 13.3 Carrying - Pick Up
+    frames:
+    - {fileID: -6470460504253458178, guid: 309fd7be6f681604498774558f65b240, type: 3}
+  - stateName: 13.4 Carrying - Throwing items
+    frames:
+    - {fileID: -6470460504253458178, guid: bfdd2450088fb7b409214e3905d03968, type: 3}
+  - stateName: 14. Horse - Idle
+    frames:
+    - {fileID: -6470460504253458178, guid: b65e548ac08e4924b9e6d2e2bbe5d379, type: 3}
+  - stateName: 14.1 Horse - Walk
+    frames:
+    - {fileID: -6470460504253458178, guid: f4c26aac2a97b8a47be39995f1ee357a, type: 3}
+  - stateName: 14.2 Horse - Run
+    frames:
+    - {fileID: -6470460504253458178, guid: 88aaca4e1e41f4841bcaea6516f92b61, type: 3}
+  - stateName: 14.3 Horse - Lower
+    frames:
+    - {fileID: -6470460504253458178, guid: bacf8a0cc5a04db43b934c9a576bcd8c, type: 3}
+  - stateName: 14.4 Horse - Eating
+    frames:
+    - {fileID: -6470460504253458178, guid: 90b59ca63eb0e7f49b99f4204d510a49, type: 3}
+  - stateName: 15. Bicycle - Idle
+    frames:
+    - {fileID: -6470460504253458178, guid: 8ad015c65c343964d8484666e60c320e, type: 3}
+  - stateName: 15.1 Bicycle - Run
+    frames:
+    - {fileID: -6470460504253458178, guid: 2ba97d3e80440b4448c0842023cfd993, type: 3}
+  - stateName: 16. Bear - Idle
+    frames:
+    - {fileID: -6470460504253458178, guid: ddf23559f8cab4c4f89bc1cd324c2d85, type: 3}
+  - stateName: 16.1 Bear - Walk
+    frames:
+    - {fileID: -6470460504253458178, guid: dc279df6129d34847b84329c94d67800, type: 3}
+  - stateName: 16.2 Bear - Run
+    frames:
+    - {fileID: -6470460504253458178, guid: 13792d5ec1b3ae84e91b793d2f4c2b1d, type: 3}
+  - stateName: 16.3 Bear - Attack
+    frames:
+    - {fileID: -6470460504253458178, guid: 81cda27ed7d50ca44ab7bbca969b2a9b, type: 3}
+  - stateName: 16.5 Bear - Dead
+    frames:
+    - {fileID: -6470460504253458178, guid: fc6ae6b4d4b943f49b33856f09d293f4, type: 3}
+  - stateName: 17 Umbrela - Idle
+    frames:
+    - {fileID: -6470460504253458178, guid: 110fd61dbc52dc9428dfbeebb113e98d, type: 3}
+  - stateName: 17.1 Umbrela - Walk
+    frames:
+    - {fileID: -6470460504253458178, guid: b76d4c9764817d149886148b59b78eeb, type: 3}
+  - stateName: 17.2 Umbrela - Run
+    frames:
+    - {fileID: -6470460504253458178, guid: 0cc0c33daf54c924ca390437698b2cc1, type: 3}
+  - stateName: 18. Setting
+    frames:
+    - {fileID: -6470460504253458178, guid: 7e61cade8e680ea41bd4603d173d4302, type: 3}
+  - stateName: 19. Sleep
+    frames:
+    - {fileID: -6470460504253458178, guid: 32e7545f27219c04fab612787f724644, type: 3}
+  - stateName: 2. Walk
+    frames:
+    - {fileID: -6470460504253458178, guid: c7b4b8ebc4b77f046bf06af964090cdf, type: 3}
+  - stateName: 20. Petting
+    frames:
+    - {fileID: -6470460504253458178, guid: 6fe0926b512584e4abeb09b0997edca4, type: 3}
+  - stateName: 21. Climbing
+    frames:
+    - {fileID: -6470460504253458178, guid: 13cb03d944a6f4444b731697c87548de, type: 3}
+  - stateName: 3. Run
+    frames:
+    - {fileID: -6470460504253458178, guid: e96155bf3452a0c4ba42769aca8f8a25, type: 3}
+  - stateName: 4. Pickaxe, Hoe and Catching insects
+    frames:
+    - {fileID: -6470460504253458178, guid: bb94f712cd2e1614dbcfa50f6173b432, type: 3}
+  - stateName: 5. Axe and Sickle
+    frames:
+    - {fileID: -6470460504253458178, guid: 69ad5b98eaaac9a40979e4d5951168d7, type: 3}
+  - stateName: 6. Shovel
+    frames:
+    - {fileID: -6470460504253458178, guid: 57f128dae3045b848bbb6d60b49d5879, type: 3}
+  - stateName: 7. Watering
+    frames:
+    - {fileID: -6470460504253458178, guid: d07e8547e32107d43b1e52a1d6677a56, type: 3}
+  - stateName: 8. SwordAttack
+    frames:
+    - {fileID: -6470460504253458178, guid: 50f4608365f9bbb4ea8bbd3a3bc7da9f, type: 3}
+  - stateName: 9. Archer
+    frames:
+    - {fileID: -6470460504253458178, guid: 4dea2c9e63de5574f882886df748a783, type: 3}
+  description: 
+  tags: []
