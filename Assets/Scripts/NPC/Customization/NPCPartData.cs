@@ -100,19 +100,24 @@ namespace NPCCustomization
         }
         
         /// <summary>
-        /// Get offset for specific frame index (for per-frame alignment)
-        /// Falls back to directional offset if per-frame is disabled
+        /// Get combined offset for specific frame index.
+        /// COMBINES: Direction offset + Per-frame adjustment (additive).
+        /// This allows fine-tuning individual frames while keeping base direction offsets.
         /// </summary>
         public Vector3 GetOffsetForFrame(int frameIndex, string direction)
         {
-            // If per-frame offsets enabled and array has valid data
-            if (usePerFrameOffsets && frameOffsets != null && frameIndex < frameOffsets.Length)
+            // Always start with directional offset as base
+            Vector3 baseOffset = GetOffsetForDirection(direction);
+            
+            // If per-frame offsets enabled, ADD the per-frame adjustment on top
+            if (usePerFrameOffsets && frameOffsets != null && frameIndex >= 0 && frameIndex < frameOffsets.Length)
             {
-                return frameOffsets[frameIndex];
+                // Combine: direction base + per-frame fine-tuning
+                return baseOffset + frameOffsets[frameIndex];
             }
             
-            // Fallback to directional offset
-            return GetOffsetForDirection(direction);
+            // If per-frame not enabled, just return directional offset
+            return baseOffset;
         }
         
         /// <summary>

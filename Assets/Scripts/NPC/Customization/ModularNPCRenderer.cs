@@ -402,13 +402,21 @@ namespace NPCCustomization
             
             UpdateLayerSprite(clothesLayer, currentClothes, stateName, frameIndex, currentDirection, directionChanged, false);
             
-            // Apply code-based bobbing for eyes (same as hair)
+            // Apply code-based bobbing for eyes
+            // Uses combined offset: Direction + Per-Frame adjustment + Bobbing
             if (eyesLayer != null && currentEyes != null && currentDirection != "Up" && enableCodeBobbing)
             {
-                Vector3 baseOffset = currentEyes.GetOffsetForDirection(currentDirection);
-                int bobbingFrame = frameIndex % bobbingOffsets.Length;
-                float bobbingY = bobbingOffsets[bobbingFrame];
-                eyesLayer.transform.localPosition = new Vector3(baseOffset.x, baseOffset.y + bobbingY, baseOffset.z);
+                // Get remapped frame index for eyes (handles different sprite layouts)
+                int eyesFrameIndex = currentEyes.RemapFrameForPart(frameIndex, currentDirection, 4);
+                if (eyesFrameIndex >= 0)
+                {
+                    // Get combined offset (direction + per-frame fine-tuning)
+                    Vector3 combinedOffset = currentEyes.GetOffsetForFrame(eyesFrameIndex, currentDirection);
+                    // Add bobbing on top
+                    int bobbingFrame = frameIndex % bobbingOffsets.Length;
+                    float bobbingY = bobbingOffsets[bobbingFrame];
+                    eyesLayer.transform.localPosition = new Vector3(combinedOffset.x, combinedOffset.y + bobbingY, combinedOffset.z);
+                }
             }
             
             // Apply code-based bobbing for hair (since hair sprites don't have built-in bobbing)
