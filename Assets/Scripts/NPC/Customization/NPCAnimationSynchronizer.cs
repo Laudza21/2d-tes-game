@@ -64,6 +64,22 @@ namespace NPCCustomization
         [Header("Current Direction")]
         [Tooltip("Current direction for directional offsets (Down/Up/Left/Right)")]
         public string currentDirection = "Down";
+        
+        [Header("Multi-Layer Support")]
+        [Tooltip("Index of currently active override layer (0 = Base Layer)")]
+        [SerializeField] private int activeLayerIndex = 0;
+        
+        [Tooltip("Layer names untuk reference")]
+        public string[] layerNames = new string[] 
+        {
+            "Base Layer",
+            "Tools & Farming",
+            "Combat",
+            "Fishing",
+            "Carrying",
+            "Vehicles",
+            "Special"
+        };
 
         void Awake()
         {
@@ -125,8 +141,8 @@ namespace NPCCustomization
         {
             if (npcRenderer == null) return;
 
-            // Get current animation state name
-            AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+            // Get current animation state name from active layer
+            AnimatorStateInfo stateInfo = GetActiveLayerStateInfo();
             string stateName = GetStateName(stateInfo);
 
             // Update frame tracking
@@ -149,7 +165,7 @@ namespace NPCCustomization
         /// </summary>
         public void OnAnimationFrame()
         {
-            AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+            AnimatorStateInfo stateInfo = GetActiveLayerStateInfo();
             int frame = CalculateCurrentFrame(stateInfo, framesPerAnimation);
             OnAnimationFrame(frame);
         }
@@ -170,8 +186,8 @@ namespace NPCCustomization
         {
             if (animator == null || npcRenderer == null) return;
 
-            // Get current animator state
-            AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+            // Get current animator state from active layer
+            AnimatorStateInfo stateInfo = GetActiveLayerStateInfo();
             
             // Detect state name
             string stateName = GetStateName(stateInfo);
@@ -436,6 +452,56 @@ namespace NPCCustomization
             // Bisa customize per animation jika needed
             // Untuk sekarang, gunakan default
             return framesPerAnimation > 0 ? framesPerAnimation : 4;
+        }
+        
+        /// <summary>
+        /// Get AnimatorStateInfo dari layer yang sedang aktif.
+        /// Scan dari layer tertinggi ke terendah, return state dari layer dengan weight > 0.5
+        /// </summary>
+        private AnimatorStateInfo GetActiveLayerStateInfo()
+        {
+            if (animator == null) return default;
+            
+            int layerCount = animator.layerCount;
+            
+            // Scan dari layer tertinggi ke terendah
+            // Layer dengan weight > 0.5 dianggap aktif
+            for (int i = layerCount - 1; i >= 0; i--)
+            {
+                float weight = animator.GetLayerWeight(i);
+                if (i == 0 || weight > 0.5f)
+                {
+                    activeLayerIndex = i;
+                    
+                    if (debugMode && i > 0)
+                    {
+                        Debug.Log($"[MultiLayer] Active layer: {GetActiveLayerName()} (index {i}, weight {weight})");
+                    }
+                    
+                    return animator.GetCurrentAnimatorStateInfo(i);
+                }
+            }
+            
+            activeLayerIndex = 0;
+            return animator.GetCurrentAnimatorStateInfo(0);
+        }
+        
+        /// <summary>
+        /// Get index dari layer yang sedang aktif
+        /// </summary>
+        public int GetActiveLayerIndex()
+        {
+            return activeLayerIndex;
+        }
+        
+        /// <summary>
+        /// Get nama layer yang sedang aktif
+        /// </summary>
+        public string GetActiveLayerName()
+        {
+            if (activeLayerIndex < layerNames.Length)
+                return layerNames[activeLayerIndex];
+            return $"Layer {activeLayerIndex}";
         }
 
 #if UNITY_EDITOR

@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 24
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -155,10 +155,10 @@ TextureImporter:
       name: Black_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 9
-        width: 16
-        height: 16
+        x: 12
+        y: 14
+        width: 9
+        height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,13 +174,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Black_4
+      name: Black_1
       rect:
         serializedVersion: 2
-        x: 298
-        y: 8
-        width: 16
-        height: 16
+        x: 44
+        y: 12
+        width: 9
+        height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,8 +189,184 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25759d47d0c88e24eb835bd64a809b13
+      spriteID: 52694203547406b4886dae092ffd8d44
+      internalID: 633874114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 13
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6459340093ab0d8469d63ef7ae9cd8c8
+      internalID: 716003641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 12
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5979e4fecf4ddd847a81b394258ae13f
+      internalID: -1338189982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_8
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 14
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7a8852d0c73314986a0c0a307524d6
       internalID: -921251035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_9
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 13
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e39fa31df902e84cbe269112dc6e034
+      internalID: 2114674166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_10
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 13
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca0bd205be8cf114e9c13d8c73bc222f
+      internalID: -776855327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_11
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 13
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f26a9cd1108b34fa35c194c7d56dec
+      internalID: -1183322627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_12
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 14
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d690a7dc5f778b42ac709bff732bbdf
+      internalID: 2044265566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black_13
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 13
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 371955262635e754c80bbee8bfda8bdf
+      internalID: -449398557
       vertices: []
       indices: 
       edges: []
@@ -199,10 +375,10 @@ TextureImporter:
       name: Black_14
       rect:
         serializedVersion: 2
-        x: 41
-        y: 8
-        width: 16
-        height: 16
+        x: 459
+        y: 13
+        width: 9
+        height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,20 +387,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0569002b92c79034a8eb565785c2cc6d
-      internalID: -948214021
+      spriteID: 52a85fe791e04f64182f6591f1d81faf
+      internalID: -198475102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Black_16
+      name: Black_15
       rect:
         serializedVersion: 2
-        x: 73
-        y: 7
-        width: 16
-        height: 16
+        x: 491
+        y: 13
+        width: 9
+        height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,206 +409,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47f3cd9e426f3d0488c76da8de3db66f
-      internalID: -1872698555
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Black_18
-      rect:
-        serializedVersion: 2
-        x: 153
-        y: 9
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91572d493471a4a4aa3666c3e39187d9
-      internalID: 1142083114
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Black_19
-      rect:
-        serializedVersion: 2
-        x: 107
-        y: 8
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ba20f45990336148b617d026aa62ff2
-      internalID: 110100890
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Black_20
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 11
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae386d4749c651c4d81fe9ee07a967da
-      internalID: 942801447
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Black_24
-      rect:
-        serializedVersion: 2
-        x: 329
-        y: 6
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 596358a405199c745b713682ede87f94
-      internalID: 1539392454
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Black_27
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 8
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 525d601d159fcd64fb514e585ea86e90
-      internalID: 1578430438
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Black_29
-      rect:
-        serializedVersion: 2
-        x: 392
-        y: 9
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4bc353be77f15e94087e11620f8f0705
-      internalID: -536036165
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Black_31
-      rect:
-        serializedVersion: 2
-        x: 426
-        y: 7
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0abfbb22825a32a4f8cf84da9a3cbb3c
-      internalID: 1706339218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Black_33
-      rect:
-        serializedVersion: 2
-        x: 458
-        y: 9
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31a6822a971d89b429d2c655a01d0f61
-      internalID: -434334498
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Black_35
-      rect:
-        serializedVersion: 2
-        x: 489
-        y: 9
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75c32e7c5924e2847a314339cf707b6e
-      internalID: 1621585073
+      spriteID: 7bc73fd8acb7b704bbe9e72f9772c0bf
+      internalID: 744214137
       vertices: []
       indices: 
       edges: []
@@ -455,40 +433,16 @@ TextureImporter:
     nameFileIdTable:
       Black_0: 4457835537561387818
       Black_1: 633874114
-      Black_10: -198475102
-      Black_11: 744214137
-      Black_12: 367641947
-      Black_13: -1921159317
-      Black_14: -948214021
-      Black_15: -365754914
-      Black_16: -1872698555
-      Black_17: 118598066
-      Black_18: 1142083114
-      Black_19: 110100890
+      Black_10: -776855327
+      Black_11: -1183322627
+      Black_12: 2044265566
+      Black_13: -449398557
+      Black_14: -198475102
+      Black_15: 744214137
       Black_2: 716003641
-      Black_20: 942801447
-      Black_21: -1595022031
-      Black_22: 1326893767
-      Black_23: 1031782608
-      Black_24: 1539392454
-      Black_25: -1290462257
-      Black_26: -350106569
-      Black_27: 1578430438
-      Black_28: -10316965
-      Black_29: -536036165
       Black_3: -1338189982
-      Black_30: -827365942
-      Black_31: 1706339218
-      Black_32: 1868806366
-      Black_33: -434334498
-      Black_34: -423893050
-      Black_35: 1621585073
-      Black_4: -921251035
-      Black_5: 2114674166
-      Black_6: -776855327
-      Black_7: -1183322627
-      Black_8: 2044265566
-      Black_9: -449398557
+      Black_8: -921251035
+      Black_9: 2114674166
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

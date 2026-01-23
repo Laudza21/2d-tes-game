@@ -33,6 +33,17 @@ namespace NPCCustomization
         public NPCPartData currentClothes;
         public List<NPCPartData> currentPermanentAccessories = new List<NPCPartData>();
         public NPCPartData[] currentSwitchableAccessories = new NPCPartData[4];
+        
+        [Header("Tool/Weapon Layer")]
+        [Tooltip("Dedicated layer for tool/weapon sprites")]
+        public SpriteRenderer toolLayer;
+        
+        [Tooltip("Current tool/weapon part data")]
+        public NPCPartData currentTool;
+        
+        [Header("Action Body Skin Override")]
+        [Tooltip("Override body skin untuk action tertentu (misal: Pickaxe body, Sword body)")]
+        public NPCPartData actionBodySkin;
 
         [Header("Settings")]
         [Tooltip("Sorting layer name untuk semua parts")]
@@ -378,8 +389,9 @@ namespace NPCCustomization
             bool directionChanged = currentDirection != previousDirection;
             previousDirection = currentDirection;
             
-            // Update sprite layers untuk basic parts
-            UpdateLayerSprite(skinLayer, currentSkin, stateName, frameIndex, currentDirection, directionChanged, false);
+            // Body: Gunakan actionBodySkin jika ada, otherwise currentSkin
+            NPCPartData bodyToUse = actionBodySkin != null ? actionBodySkin : currentSkin;
+            UpdateLayerSprite(skinLayer, bodyToUse, stateName, frameIndex, currentDirection, directionChanged, false);
             UpdateLayerSprite(hairLayer, currentHair, stateName, frameIndex, currentDirection, directionChanged, false);
             
             // Eyes: Special handling - skip entirely when facing Up (no sprites exist for Up)
@@ -466,6 +478,12 @@ namespace NPCCustomization
                     UpdateLayerSprite(layer, currentSwitchableAccessories[i], stateName, frameIndex, currentDirection, directionChanged, false);
                 }
             }
+            
+            // Update tool layer
+            if (toolLayer != null && currentTool != null)
+            {
+                UpdateLayerSprite(toolLayer, currentTool, stateName, frameIndex, currentDirection, directionChanged, false);
+            }
         }
 
         /// <summary>
@@ -535,6 +553,81 @@ namespace NPCCustomization
                 return synchronizer.currentDirection;
             }
             return "Down"; // Default
+        }
+        
+        /// <summary>
+        /// Set current tool dan update sprite layer.
+        /// Tool layer akan otomatis di-update oleh UpdateSpritesForAnimation.
+        /// </summary>
+        public void SetCurrentTool(NPCPartData toolPart)
+        {
+            currentTool = toolPart;
+            
+            // Create tool layer jika belum ada
+            if (toolLayer == null && toolPart != null)
+            {
+                toolLayer = CreateOrGetLayer("ToolLayer", 10);
+            }
+            
+            if (toolPart != null)
+            {
+                if (toolLayer != null)
+                {
+                    toolLayer.enabled = true;
+                    // Preview sprite (Edit Mode)
+                    Sprite firstSprite = toolPart.GetSpriteFrame("1. Idle", 0);
+                    if (firstSprite != null) toolLayer.sprite = firstSprite;
+                    toolLayer.transform.localPosition = toolPart.offsetDown;
+                }
+                Debug.Log($"[ModularNPCRenderer] Tool set: {toolPart.partName}");
+            }
+            else
+            {
+                if (toolLayer != null)
+                {
+                    toolLayer.enabled = false;
+                    toolLayer.sprite = null;
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Set override body skin untuk action tertentu.
+        /// Jika null, akan pakai currentSkin biasa.
+        /// </summary>
+        public void SetActionBodySkin(NPCPartData actionSkin)
+        {
+            actionBodySkin = actionSkin;
+            
+            if (actionSkin != null)
+            {
+                Debug.Log($"[ModularNPCRenderer] Action body skin set: {actionSkin.partName}");
+            }
+        }
+        
+        /// <summary>
+        /// Clear action body skin dan tool, kembali ke state normal.
+        /// </summary>
+        public void ClearAction()
+        {
+            actionBodySkin = null;
+            currentTool = null;
+            
+            if (toolLayer != null)
+            {
+                toolLayer.enabled = false;
+                toolLayer.sprite = null;
+            }
+            
+            Debug.Log("[ModularNPCRenderer] Action cleared, back to normal");
+        }
+        
+        /// <summary>
+        /// Check apakah sedang dalam action state (ada tool atau action body skin)
+        /// </summary>
+        public bool IsInActionState()
+        {
+            return actionBodySkin != null || currentTool != null;
         }
 
         /// <summary>

@@ -152,7 +152,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Blonde_1
+      name: Blonde_1111
       rect:
         serializedVersion: 2
         x: 149
@@ -174,10 +174,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blonde_2
+      name: Blonde_8
       rect:
         serializedVersion: 2
-        x: 264
+        x: 265
         y: 9
         width: 16
         height: 16
@@ -196,7 +196,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blonde_4
+      name: Blonde_9
       rect:
         serializedVersion: 2
         x: 294
@@ -218,7 +218,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blonde_5
+      name: Blonde_10
       rect:
         serializedVersion: 2
         x: 327
@@ -240,7 +240,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blonde_6
+      name: Blonde_11
       rect:
         serializedVersion: 2
         x: 360
@@ -262,7 +262,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blonde_8
+      name: Blonde_12
       rect:
         serializedVersion: 2
         x: 395
@@ -284,7 +284,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blonde_9
+      name: Blonde_13
       rect:
         serializedVersion: 2
         x: 425
@@ -306,7 +306,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blonde_10
+      name: Blonde_14
       rect:
         serializedVersion: 2
         x: 457
@@ -328,7 +328,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blonde_12
+      name: Blonde_0
       rect:
         serializedVersion: 2
         x: 8
@@ -350,7 +350,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blonde_14
+      name: Blonde_1
       rect:
         serializedVersion: 2
         x: 41
@@ -372,7 +372,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blonde_17
+      name: Blonde_2
       rect:
         serializedVersion: 2
         x: 74
@@ -394,11 +394,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blonde_19
+      name: Blonde_3
       rect:
         serializedVersion: 2
         x: 104
-        y: 7
+        y: 8
         width: 16
         height: 16
       alignment: 0
@@ -416,7 +416,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blonde_34
+      name: Blonde_15
       rect:
         serializedVersion: 2
         x: 487
@@ -453,22 +453,20 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Blonde_0: 2335545558239732540
-      Blonde_1: 541783124
-      Blonde_10: -346888682
-      Blonde_11: -1713036612
-      Blonde_12: -1777467849
-      Blonde_13: -1361686993
-      Blonde_14: 370577259
-      Blonde_15: -1959531022
+      Blonde_0: -1777467849
+      Blonde_1: 370577259
+      Blonde_10: -516847598
+      Blonde_11: -969403058
+      Blonde_1111: 541783124
+      Blonde_12: 1884249721
+      Blonde_13: 1500532307
+      Blonde_14: -346888682
+      Blonde_15: 1404170317
       Blonde_16: 1919430307
-      Blonde_17: -836304416
       Blonde_18: -383797475
-      Blonde_19: -181374770
-      Blonde_2: -1967457602
+      Blonde_2: -836304416
       Blonde_20: -1116557746
       Blonde_21: 438736486
-      Blonde_22: -1301601207
       Blonde_23: 836473996
       Blonde_24: 505786173
       Blonde_25: 1390516766
@@ -476,19 +474,14 @@ TextureImporter:
       Blonde_27: -2093639416
       Blonde_28: 136736316
       Blonde_29: -350010649
-      Blonde_3: 521066981
+      Blonde_3: -181374770
       Blonde_30: 1403180115
       Blonde_31: 1375710033
       Blonde_32: 476516568
       Blonde_33: 1433991461
-      Blonde_34: 1404170317
       Blonde_35: 1571797426
-      Blonde_4: -315355274
-      Blonde_5: -516847598
-      Blonde_6: -969403058
-      Blonde_7: 1897696197
-      Blonde_8: 1884249721
-      Blonde_9: 1500532307
+      Blonde_8: -1967457602
+      Blonde_9: -315355274
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

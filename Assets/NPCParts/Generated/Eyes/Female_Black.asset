@@ -1,0 +1,170 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4473eaccda79104dbb43835ef226788, type: 3}
+  m_Name: Female_Black
+  m_EditorClassIdentifier: Assembly-CSharp::NPCCustomization.NPCPartData
+  partName: Female_Black
+  category: 2
+  accessoryType: 0
+  offsetDown: {x: 0.002, y: 0.348, z: 0}
+  offsetUp: {x: 0, y: 0, z: 0}
+  offsetLeft: {x: 0, y: 0, z: 0}
+  offsetRight: {x: 0, y: 0, z: 0}
+  usePerFrameOffsets: 0
+  frameOffsets:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  useCustomDirectionOffsets: 1
+  customFrameOffsetDown: 0
+  customFrameOffsetUp: -1
+  customFrameOffsetRight: 8
+  customFrameOffsetLeft: 12
+  framesPerDirectionForPart: 4
+  animationStates:
+  - stateName: 1. Idle
+    frames:
+    - {fileID: 4457835537561387818, guid: b379274bcb4e8a741b81078f178da0d2, type: 3}
+    - {fileID: 1872675559, guid: b379274bcb4e8a741b81078f178da0d2, type: 3}
+    - {fileID: -1201215253, guid: b379274bcb4e8a741b81078f178da0d2, type: 3}
+    - {fileID: -759147941, guid: b379274bcb4e8a741b81078f178da0d2, type: 3}
+    - {fileID: -1470338198, guid: b379274bcb4e8a741b81078f178da0d2, type: 3}
+    - {fileID: -1696359501, guid: b379274bcb4e8a741b81078f178da0d2, type: 3}
+    - {fileID: -1226926319, guid: b379274bcb4e8a741b81078f178da0d2, type: 3}
+    - {fileID: 571725826, guid: b379274bcb4e8a741b81078f178da0d2, type: 3}
+    - {fileID: -2138570233, guid: b379274bcb4e8a741b81078f178da0d2, type: 3}
+    - {fileID: 969836421, guid: b379274bcb4e8a741b81078f178da0d2, type: 3}
+    - {fileID: -990421385, guid: b379274bcb4e8a741b81078f178da0d2, type: 3}
+    - {fileID: -1047638043, guid: b379274bcb4e8a741b81078f178da0d2, type: 3}
+  - stateName: 10. Damage
+    frames:
+    - {fileID: 4457835537561387818, guid: 72aad1a63d247ac41addcbf2b2dccc33, type: 3}
+  - stateName: 12. Fishing - Cast
+    frames:
+    - {fileID: 4457835537561387818, guid: 6aa0a0e610cfe874eac985d46ad50f6a, type: 3}
+  - stateName: 12.1. Fishing - Wait
+    frames:
+    - {fileID: 4457835537561387818, guid: a9b3a1ec28c314347bdc3c244fa6558e, type: 3}
+  - stateName: 12.2. Fishing - Bite
+    frames:
+    - {fileID: 4457835537561387818, guid: b17d818f5edfaf745bbf783b33ef874f, type: 3}
+  - stateName: 12.4. Fishing - Catch
+    frames:
+    - {fileID: 4457835537561387818, guid: d549c1a6820f1e74597bc0373e593f1f, type: 3}
+  - stateName: 13. Carrying - Idle
+    frames:
+    - {fileID: 4457835537561387818, guid: 9b124723921cc7149b0c8afed320cbf8, type: 3}
+  - stateName: 13.1 Carrying - Walk
+    frames:
+    - {fileID: 4457835537561387818, guid: f5b8b7c439633e047bc60df784b84dcb, type: 3}
+  - stateName: 13.2 Carrying - Run
+    frames:
+    - {fileID: 4457835537561387818, guid: 666819eb4ae024e43b7d6601ce8f1409, type: 3}
+  - stateName: 13.3 Carrying - Pick Up
+    frames:
+    - {fileID: 4457835537561387818, guid: d4ebcde9ffa5c514294176a72dd181e9, type: 3}
+  - stateName: 13.4 Carrying - Throwing items
+    frames:
+    - {fileID: 4457835537561387818, guid: 9d9306d2e2482394083ab338f460da2d, type: 3}
+  - stateName: 14. Horse - Idle
+    frames:
+    - {fileID: 4457835537561387818, guid: 41c0a4374c9b30e4cb80a879011b2456, type: 3}
+  - stateName: 14.1 Horse - Walk
+    frames:
+    - {fileID: 4457835537561387818, guid: 6af931ab545c8fd428e87576c1ba9dcb, type: 3}
+  - stateName: 14.2 Horse - Run
+    frames:
+    - {fileID: 4457835537561387818, guid: 323f36fbaad33254fb3b179249bfa923, type: 3}
+  - stateName: 14.3 Horse - Lower
+    frames:
+    - {fileID: 4457835537561387818, guid: dc02a07d1f2887d469f49a39b05460c8, type: 3}
+  - stateName: 14.4 Horse - Eating
+    frames:
+    - {fileID: 4457835537561387818, guid: 74f0ae5412444ed4fa28f0c14740c966, type: 3}
+  - stateName: 15. Bicycle - Idle
+    frames:
+    - {fileID: 4457835537561387818, guid: 57f0fb989f206234988854b3ddcc1ef7, type: 3}
+  - stateName: 15.1 Bicycle - Run
+    frames:
+    - {fileID: 4457835537561387818, guid: d84665fc93f4f534e999865d76a5ea90, type: 3}
+  - stateName: 16. Bear - Idle
+    frames:
+    - {fileID: 4457835537561387818, guid: ccde478a75bc4bc4cbebc7137b722bdf, type: 3}
+  - stateName: 16.1 Bear - Walk
+    frames:
+    - {fileID: 4457835537561387818, guid: e2094261d5903bc43a032b774d08efb4, type: 3}
+  - stateName: 16.2 Bear - Run
+    frames:
+    - {fileID: 4457835537561387818, guid: 7eeb983742ac5704298b976bf9ca7eab, type: 3}
+  - stateName: 16.3 Bear - Attack
+    frames:
+    - {fileID: 4457835537561387818, guid: b8bbf820f1e3bd541b72e1b39345f61d, type: 3}
+  - stateName: 16.4 Bear - Hit
+    frames:
+    - {fileID: 4457835537561387818, guid: 79b6b23c7ab05bf4696ea69875ce180b, type: 3}
+  - stateName: 16.5 Bear - Dead
+    frames:
+    - {fileID: 4457835537561387818, guid: abb0409848048e24886532cd990bb44d, type: 3}
+  - stateName: 17 Umbrela - Idle
+    frames:
+    - {fileID: 4457835537561387818, guid: af6835e21d767ca4387b1fb803a1920d, type: 3}
+  - stateName: 17.1 Umbrela - Walk
+    frames:
+    - {fileID: 4457835537561387818, guid: 25af5c86be167ad4fa9f65d0fe5aeb61, type: 3}
+  - stateName: 17.2 Umbrela - Run
+    frames:
+    - {fileID: 4457835537561387818, guid: 0e0b90b703558f543b218798035a5db4, type: 3}
+  - stateName: 18. Setting
+    frames:
+    - {fileID: 4457835537561387818, guid: 48f4d40a732443a40b974ba783f5f3cd, type: 3}
+  - stateName: 2. Walk
+    frames:
+    - {fileID: 4457835537561387818, guid: 9a3ea1ea02248434d955be72d283afca, type: 3}
+  - stateName: 20. Petting
+    frames:
+    - {fileID: 4457835537561387818, guid: 704dbb1d1be792b4b9f9a06e71cf706b, type: 3}
+  - stateName: 3. Run
+    frames:
+    - {fileID: 4457835537561387818, guid: 2c3df06529142f443a30b2c875d40c53, type: 3}
+  - stateName: 4. Pickaxe, Hoe and Catching insects
+    frames:
+    - {fileID: 4457835537561387818, guid: 6e02df1ca90810647a738d1bf47859c8, type: 3}
+  - stateName: 5. Axe and Sickle
+    frames:
+    - {fileID: 4457835537561387818, guid: 7a93771ddb5ce6943ab34d1725577fda, type: 3}
+  - stateName: 6. Shovel
+    frames:
+    - {fileID: 4457835537561387818, guid: 5457347ee52d5714c9ef80f1ed63a9ac, type: 3}
+  - stateName: 7. Watering
+    frames:
+    - {fileID: 4457835537561387818, guid: 1166d0fa213ce7e418a5d4112c007f65, type: 3}
+  - stateName: 8. SwordAttack
+    frames:
+    - {fileID: 4457835537561387818, guid: cf97c6c79cc59ed4aad55c1cdaf0aa44, type: 3}
+  - stateName: 9. Archer
+    frames:
+    - {fileID: 4457835537561387818, guid: 98eb4436cc401e649a058f353cbc8413, type: 3}
+  description: 
+  tags: []
